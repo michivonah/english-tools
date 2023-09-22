@@ -61,7 +61,7 @@ body{
    }
 
    #loader::after{
-      content: "1";
+      content: ":)";
       font-size: 8rem;
       transition: 250ms ease all;
       animation: loadingCount 3s infinite, loadingZoom 1s infinite;
@@ -69,39 +69,35 @@ body{
 
    @keyframes loadingCount{
       0%{
-         content: "1";
+         content: "I";
       }
 
       10%{
-         content: "2";
+         content: "You";
       }
 
       20%{
-         content: "3";
+         content: "He";
       }
 
       30%{
-         content: "4";
+         content: "She";
       }
 
       40%{
-         content: "5";
+         content: "It";
       }
 
       50%{
-         content: "6";
+         content: "We";
       }
 
       60%{
-         content: "7";
+         content: "You";
       }
 
       70%{
-         content: "8";
-      }
-
-      80%{
-         content: "9";
+         content: "They";
       }
    }
 
