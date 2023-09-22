@@ -1,0 +1,32 @@
+{
+    "name": "Math Tools",
+    "short_name": "Math Tools",
+    "description": "Eine Sammlung von diversen Mathematik Tools, die dir helfen sollen den Alltag zu erleichtern.",
+    "lang": "de-CH",
+    "orientation": "any",
+    "theme_color": "#3498db",
+    "background_color": "#3498db",
+    "start_url": "https://math-tools.app",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "https://math-tools.app/assets/images/logo_96.png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "https://math-tools.app/assets/images/logo_256.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "https://math-tools.app/assets/images/logo_256.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "https://math-tools.app/assets/images/logo_256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      }
+    ]
+  }

@@ -1,0 +1,518 @@
+html{scroll-behavior: smooth;}
+
+body{
+   margin: 0;
+   padding: 0;
+   color: var(--color);
+   background: var(--background);
+   text-align: left;
+   font-family: "open sans", sans-serif;
+   scroll-behavior: smooth;
+   overflow: hidden;
+   --theme1: #9b59b6;
+   --theme2: #8e44ad;
+   --background: #eaf2f8;
+   --color: #1d1d1d;
+   --white: #eaf2f8;
+   --black: #1d1d1d;
+   --borderRadius: 8px;
+   --font: 'open sans', sans-serif;
+   --transition: 200ms ease all;
+   --imgFilter: invert(100%);
+   }
+
+   #content{
+      margin: 0;
+      padding: 0;
+      font-size: 1rem;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-content: stretch;
+      align-items: stretch;
+      height: 100vh;
+      width: 100%;
+   }
+ 
+   .inner-width{
+      width: 100%;
+      max-width: clamp(1100px, 90%, 1250px);
+      margin: auto;
+   }
+
+   /* Loadingscreen */
+   #loadingscreen{
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: var(--theme1);
+      z-index: 1001;
+      color: var(--white);
+      font-weight: 800;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+   }
+
+   #loader::after{
+      content: "1";
+      font-size: 8rem;
+      transition: 250ms ease all;
+      animation: loadingCount 3s infinite, loadingZoom 1s infinite;
+   }
+
+   @keyframes loadingCount{
+      0%{
+         content: "1";
+      }
+
+      10%{
+         content: "2";
+      }
+
+      20%{
+         content: "3";
+      }
+
+      30%{
+         content: "4";
+      }
+
+      40%{
+         content: "5";
+      }
+
+      50%{
+         content: "6";
+      }
+
+      60%{
+         content: "7";
+      }
+
+      70%{
+         content: "8";
+      }
+
+      80%{
+         content: "9";
+      }
+   }
+
+   @keyframes loadingZoom{
+      0%{
+         font-size: 8rem;
+      }
+
+      50%{
+         font-size: 9rem;
+      }
+
+      100%{
+         font-size: 8rem;
+      }
+   }
+
+   /* Tools & Tabs */
+   #toolNavigation{
+      width: auto;
+      min-width: 210px;
+      max-width: 50%;
+      height: 100%;
+      resize: horizontal;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      transition: var(--transition);
+   }
+
+   #toolList{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+    background: var(--theme1);
+    color: var(--white);
+    user-select: none;
+    
+   }
+
+   #toolList input[type=radio]{
+      display: none;
+   }
+
+   #toolList label{
+    padding: 10px;
+    margin: 5px 10px;
+    transition: var(--transition);
+    border-radius: 4px;
+   }
+
+   #toolList label:hover, .toolCategoryInput:checked + .toolCategoryLabel, #toolTitle:hover{
+    background: var(--theme2);
+   }
+
+   #toolTitle{
+      padding: 10px;
+      margin: 5px 10px;
+      transition: var(--transition);
+      border-radius: 4px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-content: center;
+      align-items: center;
+      font-weight: 700;
+   }
+
+   #toolTitle img{
+      width: 1rem;
+      height: 1rem;
+      margin: 0 5px;
+   }
+
+   /* Nav for smartphone */
+   #openNavbar{
+      width: 56px;
+      height: auto;
+      padding: 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      background: var(--theme1);
+      opacity: 0.9;
+      border-radius: 0;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+      position: fixed;
+      bottom: 15vh;
+      left: 0;
+      display: none; /* FLEX */
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      align-content: center;
+      align-items: center;
+      transition: var(--transition);
+   }
+
+   #openNavbar:hover{
+      width: 66px;
+   }
+
+   /* Tools */
+   #toolContainer{
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: scroll;
+   }
+
+   .tool{
+      display: none;
+      padding: 10px 15px;
+   }
+
+   .copyBtn{
+      width: 40px;
+      height: auto;
+      margin: 10px;
+      padding: 5px 10px;
+      background: var(--theme1);
+      color: var(--white);
+      outline: none;
+      border: 2px solid var(--theme2);
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 700;
+      transition: var(--transition);
+   }
+
+   .copyBtn:hover{
+      background: var(--theme2);
+   }
+
+   .tool input{
+      width: calc(90% - 80px);
+      height: auto;
+      margin: 10px 5px;
+      padding: 5px 10px;
+      background: var(--theme1);
+      color: var(--white);
+      font-family: var(--font);
+      outline: none;
+      border: 2px solid var(--theme2);
+      border-radius: 4px;
+      caret-color: var(--white);
+      font-size: 0.9rem;
+   }
+
+   .tool ul li::marker{
+      color: var(--theme1);
+      font-size: 1.2rem;
+   }
+
+   .tool img{
+      width: 80%;
+      height: auto;
+      border: none;
+      border-radius: 4px;
+      outline: none;
+      margin: 10px;
+      filter: var(--imgFilter);
+   }
+
+   /* Welcome screen */
+   /*#willkommen{
+      background-image: url(assets/images/math_background.svg);
+      background-size: cover;
+      background-repeat: repeat;
+      background-position: center;
+   }*/
+
+   /* Scroll to the top button*/
+   #scroll-top{
+      width: 40px;
+      height: 40px;
+      background: var(--theme1);
+      border-radius: 12px;
+      margin: 15px;
+      bottom: 0;
+      right: -55px;
+      position: fixed;
+      display: flex; /* FLEX */
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      font-size: 28px;
+      color: var(--white);
+      transition: .2s linear;
+   }
+
+   #scroll-top i{
+      margin: 0;
+      transition: .1s linear;
+      stroke-width: 3px;
+   }
+
+   #scroll-top i:hover{
+      margin: -5px 0 0 0;
+   }
+
+   /* General */
+   .link{
+      position: relative;
+   }
+
+   .link::after{
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--white);
+      transition: all 250ms;
+      transform: scaleX(0);
+      border-radius: 2px;
+   }
+
+   .link:hover::after{
+      transform: scaleX(0.5);
+   }
+
+   .notice{
+      position: relative;
+      padding: 0 30px;
+      background: rgba(255, 255, 255, 0.2);
+   }
+
+   .notice::before{
+      content: "";
+      background: var(--color);
+      width: 4px;
+      height: 100%;
+      user-select: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+   }
+
+   .mathPaper{
+      padding: 15px 40px;
+      font-family: 'Mali', cursive;
+      font-weight: 300;
+      font-size: 20px;
+      /*line-height: 20px;*/
+      background-image: linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px),
+      linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+      background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+      background-position:-1px -1px, -1px -1px, -1px -1px, -1px -1px;
+      /* Thanks to https://projects.verou.me/css3patterns/#blueprint-grid */
+   }
+
+   .result{
+      position: relative;
+   }
+
+   .result::after{
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      content: "";
+      background: transparent;
+      height: 2px;
+      width: 100%;
+      border: none;
+      border-top: 1px solid var(--color);
+      border-bottom: 1px solid var(--color);
+   }
+
+   a{
+      color: inherit;
+      text-decoration: none;
+      outline: none;
+   }
+
+   a:hover{
+      color: inherit;
+   }
+
+   i{
+      text-decoration: none !important;
+      outline: none;
+      font-style: normal;
+   }
+
+   i:hover{
+      text-decoration: none !important;
+      outline: none;
+      font-style: normal;
+   }
+
+   var{
+      font-style: normal;
+      outline: none;
+   }
+
+   input, textarea, button{
+      outline: none;
+      caret-color: var(--theme1);
+   }
+
+   input::placeholder, textarea::placeholder{
+      color: inherit;
+      caret-color: var(--theme1);
+   }
+
+   /* Smartphone */
+   @media screen and (max-width:640px){
+      /* NAVIGATION */
+      #openNavbar{
+         display: flex;
+      }
+
+      #toolNavigation{
+         width: 100%;
+         min-width: 100%;
+         max-width: 100%;
+         height: 100%;
+         resize: none;
+         overflow-x: hidden;
+         overflow-y: scroll;
+         position: absolute;
+         top: 0;
+         left: -100%;
+         z-index: 100;
+      }
+
+      /* Copy button */
+      .copyBtn{
+         width: calc(100% - 20px);
+         margin: 10px;
+      }
+
+      .tool input{
+         width: calc(90% - 20px);
+         margin: 10px;
+      }
+   }
+
+   /* Print */
+   @media print{
+      @page{
+         size: A4;
+         margin: 0;
+         color: #000;
+         background: #fff;
+         padding: 0;
+         overflow: hidden;
+         border: none;
+         user-select: none;
+      }
+
+      body{
+         --background: #fff;
+         --color: #000;
+         color: #000;
+         background: #fff;
+      }
+
+      #toolNavigation, .copyBtn, .scroll-top{
+         display: none;
+      }
+
+      .notice{
+         background: rgba(0, 0, 0, 0.1);
+      }
+   
+      .notice::before{
+         background: #000 !important;
+         color: #000 !important;
+      }
+
+      .tool input{
+         width: 90%;
+         background: rgba(0, 0, 0, 0.1);
+         color: #000;
+         border: 2px dotted #000;
+      }
+
+      .tool img{
+         filter: invert(100%);
+      }
+   }
+
+   /* Selection */
+  ::selection {background: var(--theme1); color: #ffffff; border-radius: 12px;}
+  ::-moz-selection {background: var(--theme1); color: #ffffff; border-radius: 12px;}
+
+  /* Scrollbar */
+  ::-webkit-scrollbar{
+   width: 10px;
+   height: 4px;
+   background: transparent;
+ }
+
+ ::-webkit-scrollbar-thumb{
+   background: var(--theme1);
+   border-radius: 8px;
+ }
+
+ /* Resize handler */
+ ::-webkit-resizer{
+   background: var(--theme1);
+   border-radius: 4px;
+   outline: none;
+   color: var(--white);
+ }
