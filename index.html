@@ -4,41 +4,40 @@
   <title>English Tools</title>
   <meta name="mobile-web-app-title" content="English Tools">
   <meta name="apple-mobile-web-app-title" content="English Tools">
-  <link rel="icon" type="image/png" href="assets/images/logo_256.png">
-  <link rel="shortcut icon" type="image/png" href="assets/images/logo_256.png">
-  <link rel="apple-touch-icon" href="assets/images/logo_256.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/images/logo_256.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo_256.png">
-  <link rel="apple-touch-icon" sizes="167x167" href="assets/images/logo_256.png">
+  <link rel="icon" type="image/png" href="assets/logo/logo_256x256.png">
+  <link rel="shortcut icon" type="image/png" href="assets/logo/logo_256x256.png">
+  <link rel="apple-touch-icon" href="assets/logo/logo_256x256.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/logo/logo_256x256.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/logo_256x256.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="assets/logo/logo_256x256.png">
   <link rel="canonical" href="https://english.math-tools.app">
   <script src="https://unpkg.com/akar-icons-fonts"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="assets/functions.js"></script>
-  <script src="assets/calc.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css"/>
   <meta charset="UTF-8">
   <meta name="description" content="A collection of useful english information.">
   <meta name="author" content="Michi von Ah">
-  <meta name="keywords" content="Math Tools, math-tools, math-tools.app, math tools app, math app, Math-Tools.app, math-tools-app, Mathe Tools, Mathematik Tools">
+  <meta name="keywords" content="English, Englisch, Learn english, ressources, ressources english, english tenses, english school tenses, english time forms, english if conditionals, english conditionals, english wishes, english verb forms, english improvement, collection of tools">
   <meta name="robots" content="index">
   <meta http-equiv="expires" content="43200">
 
-  <meta property="og:title" content="Math Tools">
-  <meta property="og:description" content="Eine Sammlung von diversen Mathematik Tools, die dir helfen sollen den Alltag zu erleichtern.">
-  <meta property="og:image" content="assets/images/logo_256.png">
+  <meta property="og:title" content="English Tools">
+  <meta property="og:description" content="A collection of useful information to learn the english language. A help guide for the school journey.">
+  <meta property="og:image" content="assets/logo/logo_256x256.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:url" content="https://math-tools.app">
-  <meta property="og:site_name" content="Math Tools">
-  <meta property="twitter:title" content="Math Tools">
-  <meta property="twitter:description" content="Eine Sammlung von diversen Mathematik Tools, die dir helfen sollen den Alltag zu erleichtern.">
-  <meta property="twitter:image" content="assets/images/logo_256.png">
-  <meta name="twitter:image:alt" content="Math Tools">
+  <meta property="og:site_name" content="English Tools">
+  <meta property="twitter:title" content="English Tools">
+  <meta property="twitter:description" content="A collection of useful information to learn the english language. A help guide for the school journey.">
+  <meta property="twitter:image" content="assets/logo/logo_256x256.png">
+  <meta name="twitter:image:alt" content="English Tools">
   <meta name="twitter:card" content="summary_large_image">
 
-  <meta name="theme-color" content="#3498db">
-  <meta name="mobile-web-app-status-bar-style" content="#3498db">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#3498db">
+  <meta name="theme-color" content="#9b59b6">
+  <meta name="mobile-web-app-status-bar-style" content="#9b59b6">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#9b59b6">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -62,66 +61,54 @@
       <div id="toolNavigation">
         <div id="toolList">
           <div id="toolTitle">
-            <img src="assets/images/logo.svg" alt="Logo" title="Logo">
+            <img src="assets/logo/logo_96x96.png" alt="Logo" title="Logo">
             <p>English Tools</p>
           </div>
           
           <input type="radio" id="welcome" class="toolCategoryInput" name="toolCategory" onchange="changeTool();" checked>
           <label for="welcome" class="toolCategoryLabel"><i class="ai-victory-hand"></i> Welcome</label>
   
-          <input type="radio" id="tool001" class="toolCategoryInput" name="toolCategory" onchange="changeTool();">
-          <label for="tool001" class="toolCategoryLabel"><i class="ai-calculator"></i> Zahlensysteme</label>
-  
-          <input type="radio" id="tool002" class="toolCategoryInput" name="toolCategory" onchange="changeTool();">
-          <label for="tool002" class="toolCategoryLabel"><i class="ai-home"></i> Fl&auml;chen/Volumen</label>
-  
-          <input type="radio" id="tool003" class="toolCategoryInput" name="toolCategory" onchange="changeTool();">
-          <label for="tool003" class="toolCategoryLabel"><i class="ai-box"></i> Phytagoras</label>
+          <input type="radio" id="tenses" class="toolCategoryInput" name="toolCategory" onchange="changeTool();">
+          <label for="tenses" class="toolCategoryLabel"><i class="ai-calendar"></i> Tenses</label>
 
-          <input type="radio" id="tool004" class="toolCategoryInput" name="toolCategory" onchange="changeTool();">
-          <label for="tool004" class="toolCategoryLabel"><i class="ai-globe"></i> IP-Rechner</label>
-
-          <input type="radio" id="tool005" class="toolCategoryInput" name="toolCategory" onchange="changeTool();">
-          <label for="tool005" class="toolCategoryLabel"><i class="ai-key"></i> Kryptografie</label>
+          <input type="radio" id="conditionals" class="toolCategoryInput" name="toolCategory" onchange="changeTool();">
+          <label for="conditionals" class="toolCategoryLabel"><i class="ai-flag"></i> Conditionals</label>
   
-          <input type="radio" id="tool999" class="toolCategoryInput" name="toolCategory" onchange="changeTool();">
-          <label for="tool999" class="toolCategoryLabel"><i class="ai-paper"></i> Rechtliches</label>
+          <input type="radio" id="legal" class="toolCategoryInput" name="toolCategory" onchange="changeTool();">
+          <label for="legal" class="toolCategoryLabel"><i class="ai-paper"></i> Rechtliches</label>
         </div>
       </div>
 
         <div id="toolContainer">
           <div id="welcomeContainer" class="tool" data-toolid="welcome">
             <h2><var id="greeting">Hello!</var> <i class="ai-victory-hand"></i></h2>
-            <p>Herzlich Willkommen auf english.math-tools.app. Das wird eine Sammlung von diversen Mathematik Tools. Es soll dazu dienen dir den Alltag zu erleichtern.</p>
-            <p class="notice">Links siehst du eine Liste mit allen bisher vorhanden Tools. Klicke darauf um es zu &ouml;ffnen! Die Liste kann ausserdem mit dem kleinen Icon unten links vergr&ouml;ssert und verkleinert werden.</p>
-            <img src="assets/images/math_background.svg" alt="Mathematische Berechnungen und Formeln" title="Mathematische Berechnungen und Formeln">
-            <p>Was noch alles f&uuml;r dieses Tool geplant ist, siehst du auf dem <a href="https://github.com/michivonah/math-tools" class="link">GitHub Repo</a> zu dieser Website.</p>
-            <p>Wenn dir ein Tool fehlt, dann erstelle ein Issue bei GitHub.</p>
-            <p>Wenn du mehr &uuml;ber mich erfahren willst, besuche meine Website auf <a href="https://michivonah.ch" class="link">michivonah.ch</a>.</p>
-            <p>Und nun, viel Spass mit den Tools. ;-)</p>
+            <p>Welcome to this page! This will be a collection of useful resources and information about the English language. I created it mainly for me to use as a reference tool. I hope it helps you too. Feel free to use it!</p>
+            <p class="notice">On the left you can see a list of all sections available so far. Click on one to open it! The list can also be enlarged and reduced with the small icon at the bottom left. (desktop only)</p>
+            <img src="assets/images/english_background.svg" alt="English introduction" title="English introduction">
+            <p>Hope you have fun using it! ;-)</p>
+            <br><br>
+            <p>Created by Michi von Ah</p>
           </div>
 
-          <div id="flaechen" class="tool" data-toolid="tool002">
-            <h2>Fl&auml;chen & Volumen</h2>
-            <p>F&uuml;lle die Felder aus, um die entsprechende Fl&auml;che oder das Volumen zu berechnen. Funktioniert f&uuml;r Quadrate, Rechtecke und Quader.</p>
-            <input id="tool002lenght" type="number" placeholder="Länge" onkeyup="tool002()">
-            <input id="tool002width" type="number" placeholder="Breite" onkeyup="tool002()">
-            <input id="tool002height" type="number" placeholder="Höhe" onkeyup="tool002()">
-            <input id="tool002result" type="number" placeholder="Ergebnis (Beispiel: 2x3x4 = 24)" disabled>
-            <button class="copyBtn" onclick="copyClipboard('tool002result')"><i class="ai-copy"></i></button>
+          <div id="tensesSection" class="tool" data-toolid="tenses">
+            <h2>Tenses</h2>
+            <p>Coming soon...</p>
           </div>
 
-          <div id="imprint" class="tool" data-toolid="tool999">
-            <h2>Impressum <i class="ai-paper"></i></h2>
-            <p>Verantwortlich f&uuml;r diese Website (math-tools.app):</p>
-            <p><i class="ai-person"></i> Michael von Ah</p>
-            <p><i class="ai-location"></i> Obwalden, Schweiz</p>
-            <p><i class="ai-envelope"></i> <a class="link" href="mailto:info@michivonah.ch">info@michivonah.ch</a></p>
-            <h2>Hinweis zum Datenschutz</h2>
-            <p>Die auf dieser Website vom Benutzer angegebenen Daten werden nicht gespeichert und nur lokal auf dem Ger&auml;t zur Berechnung der gew&uuml;nschten Werte verwendet. Die Website wird &uuml;ber <a class="link" href="https://pages.github.com/">GitHub Pages</a> gehosted (zur Verf&uuml;gung gestellt), daher kann es sein, dass GitHub weitere Daten &uuml;ber den Benutzer speichert. Dies kann in der <a class="link" href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">Datenschutzerkl&auml;rung von GitHub</a> nachgelesen werden. Ausserdem werden die Aufrufe mit Ackee Analytics getrackt. Damit wird aufgezeichnet wann und wie lange die Website besucht wurde sowie mit welchem Ger&auml;tetyp. Durch die Nutzung dieser Website stimmt der Benutzer dem zu</p>
-            <p>Der Quellcode zu dieser Website steht &ouml;ffentlich auf <a class="link" href="https://github.com/michivonah/math-tools/">GitHub</a> zur Verf&uuml;gung.</p>
+          <div id="conditionalsSection" class="tool" data-toolid="conditionals">
+            <h2>Conditionals</h2>
+            <p>Coming soon...</p>
+          </div>
+
+          <div id="imprint" class="tool" data-toolid="legal">
+            <h2>Legal <i class="ai-paper"></i></h2>
+            <p>For more information please visit the following link</p>
+            <p><a class="link" href="https://legal.michivonah.ch">https://legal.michivonah.ch</a></p>
+            <h2>Privacy notice</h2>
+            <p>The data provided by the user on this website is not stored and is only used locally on the device to calculate the desired values. The website is hosted (provided) through GitHub Pages, so GitHub may store additional data about the user. This can be read in the privacy policy of GitHub. Furthermore, the calls are tracked with Ackee Analytics. This records when and for how long the website was visited as well as with which device type. By using this website, the user agrees to this</p>
+            <p>DThe source code to this website is publicly available on <a class="link" href="https://github.com/michivonah/english-tools/">GitHub</a>.</p>
             <h2>Copyright</h2>
-            <p>Folgende Ressourcen/Bibliotheken wurden f&uuml;r dieses Projekt verwendet:</p>
+            <p>The following resources/libraries were used for this project:</p>
             <ul>
               <li>CSS3 Patterns Gallery - projects.verou.me/css3patterns</li>
               <li>Pixabay - pixabay.com</li>
@@ -182,11 +169,13 @@
       function randomGreeting(){
         var greeting = document.getElementById("greeting");
         var greetings = [
-          "Hallo Internetreisender!",
-          "Hallo du Mathe-Guru!",
-          "Hallo Sportsfreund!",
-          "Mathe angesagt?",
-          "Moin, alles munter?"
+          "What's up?",
+          "Hey you!",
+          "English time?",
+          "Everything fine?",
+          "Nice to meet you!",
+          "Nice to see you again!",
+          "Having fun with tenses?"
         ];
         var random = Math.floor(Math.random() * greetings.length);
         greeting.textContent = greetings[random];
