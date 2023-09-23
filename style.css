@@ -258,6 +258,7 @@ body{
 
    .tool img{
       width: 80%;
+      max-width: 750px;
       height: auto;
       border: none;
       border-radius: 4px;
@@ -266,13 +267,11 @@ body{
       filter: var(--imgFilter);
    }
 
-   /* Welcome screen */
-   /*#willkommen{
-      background-image: url(assets/images/math_background.svg);
-      background-size: cover;
-      background-repeat: repeat;
-      background-position: center;
-   }*/
+   @media screen and (max-width:640px){
+      .tool img{
+         width: 100%;
+      }
+   }
 
    /* Scroll to the top button*/
    #scroll-top{
@@ -388,6 +387,18 @@ body{
   
   thead{
       font-weight: bold;
+  }
+
+  h3, h4, h5, h5{
+   margin: 5px auto 0px auto;
+  }
+
+  ul, ol{
+   margin: 2px 0px;
+  }
+
+  li{
+   margin: 0px;
   }
 
    a{
