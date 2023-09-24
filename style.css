@@ -514,6 +514,23 @@ body{
       .tool img{
          filter: invert(100%);
       }
+
+      table{
+         border-collapse: collapse;
+         margin: 6pt 0;
+         width: 100%;
+         background: rgba(255, 255, 255, 0.2);
+     }
+     
+     tr, td, th{
+         border: 1px solid #000 !important;
+         padding: 6pt;
+     }
+     
+     thead{
+         font-weight: bold;
+     }
+   
    }
 
    /* Selection */
