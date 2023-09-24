@@ -334,8 +334,19 @@ body{
       transition: var(--transition);
    }
 
+   .alert{
+      position: relative;
+      padding: 0 30px;
+      background: rgba(255, 0, 0, 0.2);
+      transition: var(--transition);
+   }
+
    .notice:hover{
       background: rgba(255, 255, 255, 0.4);
+   }
+
+   .alert:hover{
+      background: rgba(255, 0, 0, 0.4);
    }
 
    .notice::before{
@@ -350,7 +361,19 @@ body{
       transition: var(--transition);
    }
 
-   .notice:hover::before{
+   .alert::before{
+      content: "";
+      background: #ff0000;
+      width: 4px;
+      height: 100%;
+      user-select: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: var(--transition);
+   }
+
+   .notice:hover::before, .alert:hover::before{
       width: 12px;
    }
 
