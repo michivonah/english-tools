@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="122" height="39" viewBox="0 0 122 39">
+  <defs>
+    <clipPath id="clip-Past_continous">
+      <rect width="122" height="39"/>
+    </clipPath>
+  </defs>
+  <g id="Past_continous" data-name="Past continous" clip-path="url(#clip-Past_continous)">
+    <g id="Timeline" transform="translate(-3 -4)">
+      <g id="Lines" transform="translate(6 11)">
+        <line id="Line-Past" y2="12" transform="translate(6.5 3.5)" fill="none" stroke="#fff" stroke-width="1"/>
+        <line id="Line-Present" y2="12" transform="translate(56.5 3.5)" fill="none" stroke="#fff" stroke-width="1"/>
+        <line id="Line-Future" y2="12" transform="translate(106.5 3.5)" fill="none" stroke="#fff" stroke-width="1"/>
+        <line id="Timeline-Line" x2="100" transform="translate(6.5 9.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      </g>
+      <g id="Legend">
+        <text id="Past" transform="translate(7 12)" fill="#fff" font-size="5" font-family="Open Sans" font-weight="700"><tspan x="0" y="0">Past</tspan></text>
+        <text id="Present" transform="translate(53 12)" fill="#fff" font-size="5" font-family="Open Sans" font-weight="700"><tspan x="0" y="0">Present</tspan></text>
+        <text id="Future" transform="translate(104 12)" fill="#fff" font-size="5" font-family="Open Sans" font-weight="700"><tspan x="0" y="0">Future</tspan></text>
+      </g>
+    </g>
+    <g id="Gruppe_3" data-name="Gruppe 3" transform="translate(-31 -1)">
+      <g id="Gruppe_1" data-name="Gruppe 1">
+        <line id="Linie_4" data-name="Linie 4" y2="7" transform="translate(54.5 23.5)" fill="none" stroke="#ff5353" stroke-width="1"/>
+        <line id="Linie_5" data-name="Linie 5" y2="7" transform="translate(75.5 23.5)" fill="none" stroke="#ff5353" stroke-width="1"/>
+        <line id="Linie_6" data-name="Linie 6" x2="21" transform="translate(54.5 27)" fill="none" stroke="#ff5353" stroke-width="1"/>
+      </g>
+      <g id="Gruppe_2" data-name="Gruppe 2" transform="translate(-1 1)">
+        <line id="Linie_7" data-name="Linie 7" x2="6" transform="translate(62.5 30.5)" fill="none" stroke="#ff5353" stroke-linecap="round" stroke-width="1"/>
+        <line id="Linie_8" data-name="Linie 8" x2="2" y2="2" transform="translate(66.5 28.5)" fill="none" stroke="#ff5353" stroke-linecap="round" stroke-width="1"/>
+        <line id="Linie_9" data-name="Linie 9" y1="2" x2="2" transform="translate(66.5 30.5)" fill="none" stroke="#ff5353" stroke-linecap="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
