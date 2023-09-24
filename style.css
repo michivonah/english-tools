@@ -265,6 +265,11 @@ body{
       outline: none;
       margin: 10px;
       filter: var(--imgFilter);
+      transition: var(--transition);
+   }
+
+   .tool img:hover{
+      filter: drop-shadow(3px 3px 3px rgba(255, 255, 255, 0.2));
    }
 
    @media screen and (max-width:640px){
