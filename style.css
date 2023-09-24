@@ -305,29 +305,32 @@ body{
    /* General */
    .link{
       position: relative;
+      padding: 0px;
+      border: 2px solid transparent;
+      border-style: dashed;
+      background: transparent;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      transition: var(--transition);
    }
 
-   .link::after{
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background: var(--white);
-      transition: all 250ms;
-      transform: scaleX(0);
-      border-radius: 2px;
-   }
-
-   .link:hover::after{
-      transform: scaleX(0.5);
+   .link:hover{
+      padding: 4px;
+      border: 2px solid var(--color);
+      border-style: dashed;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.4);
    }
 
    .notice{
       position: relative;
       padding: 0 30px;
       background: rgba(255, 255, 255, 0.2);
+      transition: var(--transition);
+   }
+
+   .notice:hover{
+      background: rgba(255, 255, 255, 0.4);
    }
 
    .notice::before{
@@ -339,6 +342,11 @@ body{
       position: absolute;
       top: 0;
       left: 0;
+      transition: var(--transition);
+   }
+
+   .notice:hover::before{
+      width: 12px;
    }
 
    .mathPaper{
@@ -378,12 +386,18 @@ body{
       margin: 6pt 0;
       width: 100%;
       background: rgba(255, 255, 255, 0.2);
+      transition: var(--transition);
   }
   
   tr, td, th{
       border: 1px solid var(--color);
       padding: 6pt;
+      transition: var(--transition);
   }
+
+  td:hover, th:hover{
+   background: rgba(255, 255, 255, 0.4);
+}
   
   thead{
       font-weight: bold;
@@ -436,6 +450,30 @@ body{
    input::placeholder, textarea::placeholder{
       color: inherit;
       caret-color: var(--theme1);
+   }
+
+   button{
+      width: 90%;
+      height: auto;
+      margin: 10px 5%;
+      padding: 10px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      background: var(--theme1);
+      color: var(--white);
+      opacity: 0.9;
+      border: 2px solid transparent;
+      border-radius: 12px;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      transition: var(--transition);
+   }
+
+   button:hover{
+      width: 100%;
+      margin: 10px 0;
+      border: 2px solid var(--white);
    }
 
    /* Smartphone */
