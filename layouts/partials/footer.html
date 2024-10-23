@@ -1,0 +1,54 @@
+<script>
+    // Loading
+    window.addEventListener('load', () => {
+      // detect darkmode
+      if(window.matchMedia('(prefers-color-scheme: dark)').matches || localStorage.getItem('darkmode') == "true"){
+          document.body.style.setProperty('--background', '#181818');
+          document.body.style.setProperty('--color', '#fff');
+          document.body.style.setProperty('--imgFilter', '0%');
+          console.log('Darkmode activated.');
+          }
+        // show current tool
+        changeTool();
+        // configure nav functions
+        var navButtons = document.querySelectorAll('.toolCategoryLabel');
+        navButtons.forEach(obj => obj.addEventListener("click", toggleNavigation));
+        // show a random greeting
+        randomGreeting();
+        // hide loadingscreen
+        setTimeout(function(){
+          document.getElementById('loadingscreen').style.display = "none";
+        }, 1000)
+    });
+
+    window.addEventListener('scroll', function(e) {
+      var scrollTop = document.getElementById('scroll-top');
+      if(this.scrollY > 20){
+        scrollTop.style.right = "0";
+      }
+      else{
+        scrollTop.style.right = "-55px";
+      }
+    });
+
+    function scrollToTop(){
+      window.scroll(0, 0);
+    }
+
+    function randomGreeting(){
+      var greeting = document.getElementById("greeting");
+      var greetings = [
+        "What's up?",
+        "Hey you!",
+        "English time?",
+        "Everything fine?",
+        "Nice to meet you!",
+        "Nice to see you again!",
+        "Having fun with tenses?"
+      ];
+      var random = Math.floor(Math.random() * greetings.length);
+      greeting.textContent = greetings[random];
+    }
+    </script>
+</body>
+</html>

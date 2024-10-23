@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <title>{{ .Site.Title }}</title>
+  <meta name="mobile-web-app-title" content="{{ .Site.Title }}">
+  <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
+  <link rel="icon" type="image/png" href="{{ .Site.Params.faviconPath }}">
+  <link rel="shortcut icon" type="image/png" href="{{ .Site.Params.faviconPath }}">
+  <link rel="apple-touch-icon" href="{{ .Site.Params.faviconPath }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ .Site.Params.faviconPath }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.Params.faviconPath }}">
+  <link rel="apple-touch-icon" sizes="167x167" href="{{ .Site.Params.faviconPath }}">
+  <link rel="canonical" href="{{ .Site.BaseURL }}">
+  <script src="https://unpkg.com/akar-icons-fonts"></script>
+  <script src="assets/functions.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta name="author" content="{{ .Site.Params.author }}">
+  <meta name="keywords" content="{{ .Site.Params.tags }}">
+  <meta name="robots" content="index">
+  <meta http-equiv="expires" content="43200">
+
+  <meta property="og:title" content="{{ .Site.Title }}">
+  <meta property="og:description" content="{{ .Site.Params.description }}">
+  <meta property="og:image" content="{{ .Site.Params.faviconPath }}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:url" content="{{ .Site.BaseURL }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="twitter:title" content="{{ .Site.Title }}">
+  <meta property="twitter:description" content="{{ .Site.Params.description }}">
+  <meta property="twitter:image" content="{{ .Site.Params.faviconPath }}">
+  <meta name="twitter:image:alt" content="{{ .Site.Title }}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="theme-color" content="{{ .Site.Params.themeColor }}">
+  <meta name="mobile-web-app-status-bar-style" content="{{ .Site.Params.themeColor }}">
+  <meta name="apple-mobile-web-app-status-bar-style" content="{{ .Site.Params.themeColor }}">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="manifest.json">
+  <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
