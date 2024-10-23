@@ -142,19 +142,15 @@ body{
     
    }
 
-   #toolList input[type=radio]{
-      display: none;
-   }
-
-   #toolList label{
+   .toolCategoryLabel{
     padding: 10px;
     margin: 5px 10px;
     transition: var(--transition);
     border-radius: 4px;
    }
 
-   #toolList label:hover, .toolCategoryInput:checked + .toolCategoryLabel, #toolTitle:hover{
-    background: var(--theme2);
+   .toolCategoryLabel:hover{
+      background: var(--theme2);
    }
 
    #toolTitle{
@@ -213,7 +209,6 @@ body{
    }
 
    .tool{
-      display: none;
       padding: 10px 15px;
    }
 

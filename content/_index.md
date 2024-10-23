@@ -1,5 +1,6 @@
 ---
 title: "Home"
+icon: "ai-victory-hand"
 ---
 
 ## <var id="greeting">Hello!</var> <i class="ai-victory-hand"></i>
