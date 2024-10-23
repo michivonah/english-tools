@@ -1,42 +1,34 @@
-<div id="wishesSection" class="tool" data-toolid="wishes">
-            <h2>Wishes</h2>
-            <p>Sentences with <b>wish</b> and <b>if only</b> were used when we talk about things we want to change.</p>
-            <p>We have two types of wish sentences.</p>
-            <ul>
-              <li>I wish for something I can change (present)</li>
-              <li>I wish for something someone other can change (present)</li>
-              <li>I wish that something is different that happend in the past. (past)</li>
-            </ul>
-            <p>Take a look at the following table:</p>
-            <table>
-              <tr>
-                <th>Type of the wish</th>
-                <th>Form</th>
-                <th>Example</th>
-              </tr>
-              <tr>
-                <td>Present: I can change it</td>
-                <td>wish/if only + past tense</td>
-                <td>I wish I could swim.</td>
-              </tr>
-              <tr>
-                <td>Present: Someone else can change it</td>
-                <td>wish + would</td>
-                <td>I wish they would buy a new oven.</td>
-              </tr>
-              <tr>
-                <td>Past: I wish that something happend different</td>
-                <td>wish/if only + past perfect</td>
-                <td>I wish I had come to work earlier today.</td>
-              </tr>
-            </table>
-            <p class="notice">After a would you always have to use present simple if you write about a thing you want to be changed.</p>
-            <h3>Some more examples</h3>
-            <ul>
-              <li>I wish we had a bigger office.</li>
-              <li>I wish the internet speed here was faster.</li>
-              <li>I wish the sun would shine.</li>
-              <li>He wishes I would work less.</li>
-              <li>I wish I had bought a cat when I was little.</li>
-            </ul>
-          </div>
+---
+title: "Wishes"
+icon: "ai-gift"
+slug: "wishes"
+type: "topics"
+---
+
+## Wishes
+
+Sentences with **wish** and **if only** were used when we talk about things we want to change.
+
+We have two types of wish sentences.
+
+*   I wish for something I can change (present)
+*   I wish for something someone other can change (present)
+*   I wish that something is different that happend in the past. (past)
+
+Take a look at the following table:
+
+| Type of the wish | Form | Example |
+| --- | --- | --- |
+| Present: I can change it | wish/if only + past tense | I wish I could swim. |
+| Present: Someone else can change it | wish + would | I wish they would buy a new oven. |
+| Past: I wish that something happend different | wish/if only + past perfect | I wish I had come to work earlier today. |
+
+After a would you always have to use present simple if you write about a thing you want to be changed.
+
+### Some more examples
+
+*   I wish we had a bigger office.
+*   I wish the internet speed here was faster.
+*   I wish the sun would shine.
+*   He wishes I would work less.
+*   I wish I had bought a cat when I was little.
