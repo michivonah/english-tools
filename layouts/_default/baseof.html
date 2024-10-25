@@ -6,7 +6,8 @@
     {{ partial "navigationList.html" . }}
     <div id="toolContainer">
         <div class="tool">
-            {{ .Content }}
+            {{ block "main" . }}
+            {{ end }}
         </div>
     </div>
 </div>
