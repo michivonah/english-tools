@@ -8,7 +8,7 @@
       {{ $pages := slice .Site.Home }}
       {{ $pages = $pages | append (where .Site.RegularPages "Type" "topics") }}
       {{ range $pages }}
-      <a class="toolCategoryLabel" href="{{ .Permalink }}"><i class="{{ .Params.icon }}"></i> {{ .Title }}</a>
+      <a class="toolCategoryLabel {{ if eq .Permalink $.Permalink }}toolActive{{ end }}" href="{{ .Permalink }}"><i class="{{ .Params.icon }}"></i> {{ .Title }}</a>
       {{ end }}
       
     </div>

@@ -13,6 +13,6 @@ Welcome to this page! This will be a collection of useful resources and informat
 
 Please consume all information without guarantee. Hope you have fun using it! ;-)
 
-Created by [Michi von Ah](https://michivonah.ch)
+Created by {{< link "https://michivonah.ch" >}}Michi von Ah{{< /link >}}
 
 <button onclick="window.open('https://paypal.me/michivonah')">Buy me a tea <i class="ai-togo-cup"></i></button>

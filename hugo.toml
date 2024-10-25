@@ -8,3 +8,8 @@ title = 'English Tools'
     author = "Michi von Ah"
     faviconPath = "assets/logo/logo_256x256.png"
     themeColor = "#9b59b6"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

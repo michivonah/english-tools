@@ -8,17 +8,12 @@
           document.body.style.setProperty('--imgFilter', '0%');
           console.log('Darkmode activated.');
           }
-        // show current tool
-        changeTool();
-        // configure nav functions
-        var navButtons = document.querySelectorAll('.toolCategoryLabel');
-        navButtons.forEach(obj => obj.addEventListener("click", toggleNavigation));
         // show a random greeting
         randomGreeting();
         // hide loadingscreen
         setTimeout(function(){
           document.getElementById('loadingscreen').style.display = "none";
-        }, 1000)
+        }, 200)
     });
 
     window.addEventListener('scroll', function(e) {

@@ -24,17 +24,6 @@ function toggleSection(sectionName, type){
     }
   }
 
-  function changeTool(){
-    var allTools = document.getElementsByClassName('tool');
-    for(var i = 0; i < allTools.length; i++){
-      var current = allTools[i].id;
-      var toolId = allTools[i].dataset.toolid;
-      var state = document.getElementById(toolId).checked;
-      if(state == true) document.getElementById(current).style.display = "block";
-      else document.getElementById(current).style.display = "none";
-    }
-  }
-
   function toggleNavigation(mode){
     var toggleBtn = document.getElementById("openNavbar");
     var nav = document.getElementById("toolNavigation");

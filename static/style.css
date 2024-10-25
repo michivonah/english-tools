@@ -149,7 +149,7 @@ body{
     border-radius: 4px;
    }
 
-   .toolCategoryLabel:hover{
+   .toolCategoryLabel:hover, .toolActive{
       background: var(--theme2);
    }
 
@@ -322,11 +322,13 @@ body{
       background: rgba(255, 255, 255, 0.4);
    }
 
-   .notice{
+   .notice, blockquote{
       position: relative;
       padding: 0 30px;
       background: rgba(255, 255, 255, 0.2);
       transition: var(--transition);
+      margin: 0;
+      unicode-bidi: isolate;
    }
 
    .alert{
@@ -336,7 +338,7 @@ body{
       transition: var(--transition);
    }
 
-   .notice:hover{
+   .notice:hover, blockquote:hover{
       background: rgba(255, 255, 255, 0.4);
    }
 
@@ -344,7 +346,7 @@ body{
       background: rgba(255, 0, 0, 0.4);
    }
 
-   .notice::before{
+   .notice::before, blockquote::before{
       content: "";
       background: var(--color);
       width: 4px;
@@ -368,7 +370,7 @@ body{
       transition: var(--transition);
    }
 
-   .notice:hover::before, .alert:hover::before{
+   .notice:hover::before, .alert:hover::before, blockquote:hover::before{
       width: 12px;
    }
 
@@ -556,11 +558,11 @@ body{
          display: none;
       }
 
-      .notice{
+      .notice, blockquote{
          background: rgba(0, 0, 0, 0.1);
       }
    
-      .notice::before{
+      .notice::before, blockquote::before{
          background: #000 !important;
          color: #000 !important;
       }
