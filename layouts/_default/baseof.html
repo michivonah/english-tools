@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+{{ partial "loadingscreen.html" . }}
+
+{{ partial "navigationControls.html" . }}
+<div id="content">
+    {{ partial "navigationList.html" . }}
+    <div id="toolContainer">
+        <div class="tool">
+            {{ block "main" . }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+{{ partial "scrollTop.html" . }}
+{{ partial "footer.html" . }}

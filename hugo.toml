@@ -1,0 +1,26 @@
+baseURL = 'https://english.neodym.dev'
+languageCode = 'en-CH'
+title = 'English Tools'
+
+[params]
+    description = "A collection of useful information to learn the english language. A help guide for the school journey."
+    tags = "English, Englisch, Learn english, ressources, ressources english, english tenses, english school tenses, english time forms, english if conditionals, english conditionals, english wishes, english verb forms, english improvement, collection of tools"
+    author = "Michi von Ah"
+    faviconPath = "assets/logo/logo_256x256.png"
+    themeColor = "#9b59b6"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputFormats]
+  [outputFormats.manifest]
+    name = "manifest"
+    baseName = "manifest"
+    mediaType = "application/json"
+    isPlainText = true
+    notAlternative = "true"
+
+[outputs]
+  home = ["HTML", "manifest", "SITEMAP"]

@@ -1,0 +1,32 @@
+{
+    "name": "{{ .Site.Title }}",
+    "short_name": "{{ .Site.Title }}",
+    "description": "{{ .Site.Params.description }}",
+    "lang": "{{ .Site.LanguageCode }}",
+    "orientation": "any",
+    "theme_color": "{{ .Site.Params.themeColor }}",
+    "background_color": "{{ .Site.Params.themeColor }}",
+    "start_url": "{{ .Site.BaseURL | absURL }}",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "{{ .Site.Params.faviconPath | absURL }}",
+        "sizes": "96x96"
+      },
+      {
+        "src": "{{ .Site.Params.faviconPath | absURL }}",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "{{ .Site.Params.faviconPath | absURL }}",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "{{ .Site.Params.faviconPath | absURL }}",
+        "sizes": "256x256",
+        "type": "image/png"
+      }
+    ]
+  }

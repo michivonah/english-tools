@@ -1,0 +1,106 @@
+media:
+  input: static/assets
+  output: /assets
+  extensions: [ jpg, jpeg, png, webp, gif, svg ]
+
+content:
+  - name: general
+    label: General
+    type: file
+    format: toml
+    path: hugo.toml
+    icon: file-cog
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: params
+        label: Parameters
+        type: object
+        fields:
+        - name: description
+          label: Page description
+          type: text
+          required: false
+        - name: tags
+          label: Content Tags
+          type: string
+          required: false
+        - name: author
+          label: Author Name
+          type: string
+          required: false
+        - name: themeColor
+          label: Theme Color
+          description: Theme Color used for branding of the page (hex format)
+          type: string
+          required: false
+
+  - name: home
+    label: Home
+    type: file
+    path: content/_index.md
+    icon: house
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: icon
+        label: Icon
+        description: Icon used in the navigation from akar-icons
+        type: string
+        required: false
+      - name: body
+        label: Page content
+        type: rich-text
+        options:
+          format: markdown
+          image:
+            input: static/assets/images
+            output: /assets/images/
+            path: static/assets/images
+            extensions: [ jpg, jpeg, png, webp, gif, svg ]
+        required: false
+
+  - name: topics
+    label: Topics
+    type: collection
+    path: content/topics
+    icon: book-check
+    view:
+      fields:
+        - title
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: icon
+        label: Icon
+        description: Icon used in the navigation from akar-icons
+        type: string
+        required: false
+      - name: slug
+        label: Page Slug
+        description: The slug of the current page.
+        type: string
+        required: true
+      - name: type
+        label: Type
+        type: string
+        default: "topics"
+        hidden: true
+        required: true
+      - name: body
+        label: Page content
+        type: rich-text
+        options:
+          format: markdown
+          image:
+            input: static/assets/images
+            output: /assets/images/
+            path: static/assets/images
+            extensions: [ jpg, jpeg, png, webp, gif, svg ]
+        required: false
