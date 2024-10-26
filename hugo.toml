@@ -13,3 +13,14 @@ title = 'English Tools'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[outputFormats]
+  [outputFormats.manifest]
+    name = "manifest"
+    baseName = "manifest"
+    mediaType = "application/json"
+    isPlainText = true
+    notAlternative = "true"
+
+[outputs]
+  home = ["HTML", "manifest", "SITEMAP"]
