@@ -616,6 +616,9 @@ body{
  ::-webkit-resizer{
    background: var(--theme1);
    border-radius: 4px;
+   border: none;
    outline: none;
-   color: var(--white);
+   box-shadow: none;
+   -webkit-background-clip: padding-box;
+   color: transparent;
  }
