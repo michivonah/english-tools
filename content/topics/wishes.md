@@ -11,9 +11,9 @@ Sentences with **wish** and **if only** were used when we talk about things we w
 
 We have two types of wish sentences.
 
-*   I wish for something I can change (present)
-*   I wish for something someone other can change (present)
-*   I wish that something is different that happend in the past. (past)
+- I wish for something I can change (present)
+- I wish for something someone other can change (present)
+- I wish that something is different that happend in the past. (past)
 
 Take a look at the following table:
 
@@ -27,8 +27,8 @@ After a would you always have to use present simple if you write about a thing y
 
 ### Some more examples
 
-*   I wish we had a bigger office.
-*   I wish the internet speed here was faster.
-*   I wish the sun would shine.
-*   He wishes I would work less.
-*   I wish I had bought a cat when I was little.
+- I wish we had a bigger office.
+- I wish the internet speed here was faster.
+- I wish the sun would shine.
+- He wishes I would work less.
+- I wish I had bought a cat when I was little.
