@@ -42,7 +42,6 @@ content:
     type: file
     path: content/_index.md
     icon: house
-    format: code
     fields:
       - name: title
         label: Title
