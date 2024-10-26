@@ -1,5 +1,51 @@
 // functions.js
-// Michi von Ah - 2022
+// Michi von Ah - 2022/2024
+
+// Loading
+window.addEventListener('load', () => {
+  // detect darkmode
+  if(window.matchMedia('(prefers-color-scheme: dark)').matches || localStorage.getItem('darkmode') == "true"){
+      document.body.style.setProperty('--background', '#181818');
+      document.body.style.setProperty('--color', '#fff');
+      document.body.style.setProperty('--imgFilter', '0%');
+      console.log('Darkmode activated.');
+      }
+    // show a random greeting
+    //if (window.location.href == {{ .Site.BaseURL }}){randomGreeting()};
+    // hide loadingscreen
+    setTimeout(function(){
+      document.getElementById('loadingscreen').style.display = "none";
+    }, 200)
+});
+
+window.addEventListener('scroll', function(e) {
+  var scrollTop = document.getElementById('scroll-top');
+  if(this.scrollY > 20){
+    scrollTop.style.right = "0";
+  }
+  else{
+    scrollTop.style.right = "-55px";
+  }
+});
+
+function scrollToTop(){
+  window.scroll(0, 0);
+}
+
+function randomGreeting(){
+  var greeting = document.getElementById("greeting");
+  var greetings = [
+    "What's up?",
+    "Hey you!",
+    "English time?",
+    "Everything fine?",
+    "Nice to meet you!",
+    "Nice to see you again!",
+    "Having fun with tenses?"
+  ];
+  var random = Math.floor(Math.random() * greetings.length);
+  greeting.textContent = greetings[random];
+}
 
 function toggleSection(sectionName, type){
     var section = document.getElementById(sectionName);
